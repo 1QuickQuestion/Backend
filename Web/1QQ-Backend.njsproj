@@ -18,6 +18,11 @@
   <ItemGroup>
     <Content Include="assets\admin\admin.html" />
     <Content Include="assets\app.css" />
+    <Content Include="assets\app\admin\admin.html" />
+    <Content Include="assets\app\app.css" />
+    <Content Include="assets\app\home\home.html" />
+    <Content Include="assets\app\xignals\xignals.html" />
+    <Content Include="assets\app\xignal\xignal.html" />
     <Content Include="assets\home\home.html" />
     <Content Include="assets\index.html" />
     <Content Include="assets\question\question.html" />
@@ -34,6 +39,13 @@
     <Compile Include="app.js" />
     <Compile Include="assets\admin\admin.js" />
     <Compile Include="assets\app.js" />
+    <Compile Include="assets\app\admin\admin.js" />
+    <Compile Include="assets\app\api.js" />
+    <Compile Include="assets\app\app.js" />
+    <Compile Include="assets\app\home\home.js" />
+    <Compile Include="assets\app\routes.js" />
+    <Compile Include="assets\app\xignals\xignals.js" />
+    <Compile Include="assets\app\xignal\xignal.js" />
     <Compile Include="assets\home\home.js" />
     <Compile Include="assets\question\question.js" />
     <Compile Include="assets\routes.js" />
@@ -107,6 +119,11 @@
     <Folder Include="api\services" />
     <Folder Include="assets" />
     <Folder Include="assets\admin\" />
+    <Folder Include="assets\app\" />
+    <Folder Include="assets\app\admin\" />
+    <Folder Include="assets\app\home\" />
+    <Folder Include="assets\app\xignals\" />
+    <Folder Include="assets\app\xignal\" />
     <Folder Include="assets\home\" />
     <Folder Include="assets\images" />
     <Folder Include="assets\js" />
