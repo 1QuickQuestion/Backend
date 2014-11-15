@@ -32,7 +32,7 @@
                     templateUrl: 'admin/admin.html',
                 }
             }, {
-                url: '/question',
+                url: '/question/:id',
                 config: {
                     title: 'question',
                     templateUrl: 'question/question.html'
