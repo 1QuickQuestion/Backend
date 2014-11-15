@@ -16,8 +16,17 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="assets\admin\admin.html" />
+    <Content Include="assets\app.css" />
+    <Content Include="assets\home\home.html" />
+    <Content Include="assets\index.html" />
+    <Content Include="assets\question\question.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+<<<<<<< HEAD
+=======
+    <Compile Include="api\controllers\QuestionsController.js" />
+>>>>>>> master
     <Compile Include="api\controllers\ResponsesController.js" />
     <Compile Include="api\controllers\SurveysController.js" />
     <Compile Include="api\controllers\UsersController.js" />
@@ -26,6 +35,11 @@
     <Compile Include="api\models\Surveys.js" />
     <Compile Include="api\models\Users.js" />
     <Compile Include="app.js" />
+    <Compile Include="assets\admin\admin.js" />
+    <Compile Include="assets\app.js" />
+    <Compile Include="assets\home\home.js" />
+    <Compile Include="assets\question\question.js" />
+    <Compile Include="assets\routes.js" />
     <Compile Include="Gruntfile.js" />
     <Content Include="assets\robots.txt" />
     <Content Include="assets\favicon.ico" />
@@ -95,9 +109,12 @@
     <Folder Include="api\responses" />
     <Folder Include="api\services" />
     <Folder Include="assets" />
+    <Folder Include="assets\admin\" />
+    <Folder Include="assets\home\" />
     <Folder Include="assets\images" />
     <Folder Include="assets\js" />
     <Folder Include="assets\js\dependencies" />
+    <Folder Include="assets\question\" />
     <Folder Include="assets\styles" />
     <Folder Include="assets\templates" />
     <Folder Include="config" />
