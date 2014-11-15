@@ -11,7 +11,7 @@ module.exports = {
         text: 'string',
         type: {
             type: 'string', 
-            enum: ['email', 'range', 'freetext']
+            enum: ['string', 'text', 'range']
         },
   }
 };
