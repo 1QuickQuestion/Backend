@@ -36,12 +36,8 @@ module.exports.routes = {
     view: 'home'
   },
 
-  '/admin': {
-    view: 'admin'
-  },
-
-  '/q:id': {
-    view: 'question'
+  '/id/:id': {
+    view: 'xignal'
   }
 
   /***************************************************************************
