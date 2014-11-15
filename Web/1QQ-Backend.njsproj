@@ -18,6 +18,12 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Compile Include="api\controllers\AnswersController.js" />
+    <Compile Include="api\controllers\QuestionsController.js" />
+    <Compile Include="api\controllers\UsersController.js" />
+    <Compile Include="api\models\Answers.js" />
+    <Compile Include="api\models\Questions.js" />
+    <Compile Include="api\models\Users.js" />
     <Compile Include="app.js" />
     <Compile Include="Gruntfile.js" />
     <Content Include="assets\robots.txt" />
