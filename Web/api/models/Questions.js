@@ -9,7 +9,10 @@ module.exports = {
 
   attributes: {
         text: 'string',
-        type: 'string',
+        type: {
+            type: 'string', 
+            enum: ['email', 'range', 'freetext']
+        },
   }
 };
 
