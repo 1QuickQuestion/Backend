@@ -8,7 +8,7 @@
 module.exports = {
     connection: 'someMongodbServer',
     attributes: {
-        userId : {type: 'int', required: true },
+        userId : {type: 'string', required: true },
         name: { type: 'string', required: true },
         description: 'string',
         location: 'string',
