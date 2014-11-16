@@ -8,10 +8,10 @@
 module.exports = {
     connection: 'someMongodbServer',
     attributes: {
-        questionId : { type: 'int', required: true },
-        responderId: 'uuid',
+        questionId : { type: 'string', required: true },
+        responderId: 'string',
         value : { type: 'string' },
-        numberValue : { type: 'int' }
+        numberValue : { type: 'integer' }
     }
 };
 
