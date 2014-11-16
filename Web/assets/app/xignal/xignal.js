@@ -11,6 +11,7 @@
       var id = $location.path().split('/')[2];
 
       vm.showLastPage = false;
+      vm.canGoBack = false;
       vm.email = '';
       vm.nps = '5';
 
@@ -39,7 +40,7 @@
       vm.next = function(){
         var response = {questionId: vm.survey.questions[questionIndex].id};
 
-        if(questionIndex + 1 < numberOfQuestions) {
+        if(questionIndex < numberOfQuestions) {
 
           // create question and save values
           if(questionIndex == 1) response.value = vm.email;
@@ -48,13 +49,15 @@
           api.createResponse(vm.survey.id, response);
 
           questionIndex++;
-          return false;
         }
 
-        if(questionIndex + 1 == numberOfQuestions) {
+        vm.canGoBack = true;
+
+        if(questionIndex == numberOfQuestions) {
           // create question and save values
           // publish response
           vm.showLastPage = true;
+          vm.canGoBack = false;
         }
 
         return false;
