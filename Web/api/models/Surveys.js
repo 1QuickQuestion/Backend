@@ -6,10 +6,10 @@
 */
 
 module.exports = {
-
+    connection: 'someMongodbServer',
     attributes: {
-        userId : 'int',
-        name: 'string',
+        userId : {type: 'int', required: true },
+        name: { type: 'string', required: true },
         description: 'string',
         location: 'string',
         shortUrl: 'string',

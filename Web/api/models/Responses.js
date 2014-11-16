@@ -6,11 +6,12 @@
 */
 
 module.exports = {
-
+    connection: 'someMongodbServer',
     attributes: {
-        questionId : 'integer',
+        questionId : { type: 'int', required: true },
         responderId: 'uuid',
-        value : 'string'
-  }
+        value : { type: 'string' },
+        numberValue : { type: 'int' }
+    }
 };
 
