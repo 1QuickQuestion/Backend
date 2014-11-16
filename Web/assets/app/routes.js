@@ -24,12 +24,6 @@
           title: 'home',
           templateUrl: '/app/home/home.html'
         }
-      // }, {
-      //   url: '/id/:id',
-      //   config: {
-      //     title: 'xignal',
-      //     templateUrl: '/app/xignal/xignal.html',
-      //   }
       }, {
         url: '/admin',
         config: {
@@ -41,6 +35,18 @@
         config: {
           title: 'xignals',
           templateUrl: '/app/xignals/xignals.html'
+        }
+      }, {
+        url: '/email',
+        config: {
+          title: 'email',
+          templateUrl: '/app/email.html'
+        }
+      }, {
+        url: '/fistpump',
+        config: {
+          title: 'fistpump',
+          templateUrl: '/app/fistpump.html'
         }
       }
     ];

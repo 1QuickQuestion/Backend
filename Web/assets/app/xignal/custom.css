@@ -1,0 +1,177 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300);
+
+body { font-family: 'Open Sans', sans-serif; background: #fff; color: #fff; }
+strong, .strong { font-weight: 700; }
+a { color: #fff; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-05opacity { opacity: 0.75; }
+.text-thin { font-weight: 200 !important; }
+
+.app { background: rgba(0,0,0,0.1); }
+.navbar-app { color: #fff; background: ; }
+.navbar-brand { font-weight: 700; color: #fff; background: none; border: 0; }
+
+/* Allows us to have nice overlay effect, also where the background colour lives */
+.push-down { padding-top: 20px; background: #9524ba; }
+.push-down.purple { background: #824399; }
+.push-down.blue { background: #5B8EA6; }
+.push-down.red { background: #BC4848; }
+.push-down.green { background: #73BF47; }
+
+/* Main content container */
+.main-content { padding-top: 20%; }
+.main-content h1 { font-weight: 700; padding-bottom: 0.5em; font-size: 2em; }
+
+.app-body { margin-top: -50px; top: 100px; box-sizing: content-box; }
+.has-navbar-bottom .app-body { padding-bottom: 0; }
+.app-body .helper { padding-top: 1em; }
+
+/* Nav panels (top and bottom) */
+.navbar-absolute-top { border: 0; background: rgba(0,0,0,0.2); }
+.navbar-absolute-top .logo { background: url(../images/logo.png) no-repeat 0 50%; width: 50px; height: 50px; background-size: 20px 20px; display: block; }
+
+.navbar-absolute-bottom { border: 0; background: transparent; }
+.navbar-absolute-bottom .button { line-height: 50px; text-align: center; }
+.navbar-absolute-bottom .button.key-action .col-xs-4 { background: #fff; color: #999; display: block; padding-left: 0; }
+
+/* Fistpump image */
+.fist-pump-image { width: 100%; height: 130px; background-size: 100% 100%; display: block; background: url(../images/fist-pump.png) no-repeat 50% 50%; background-size: 130px 130px; margin-bottom: 2em; }
+
+/* Text input */
+input[type=text] { color: #333; background: #fff; border: 0; width: 100%; padding: 0.5em 1em; font-size: 20px; }
+.input-line { width: 100%; min-height: 10px; background: rgba(0,0,0,0.1); padding: 10px; }
+
+/* Form prettifier */
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid transparent;
+
+    /*required for proper track sizing in FF*/
+    width: 100%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    opacity: 1 !important;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: -10px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    background: rbga(0,0,0,0.5);
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+/*hide the outline behind the border*/
+input[type=range] {
+  background: transparent !important;
+}
+
+input[type=range]:-moz-focusring{
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: rbga(0,0,0,0.5);
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: rbga(0,0,0,0.5);
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #fff;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: rbga(0,0,0,0.5);
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: rbga(0,0,0,0.5);
+}
+
+/* Naviagtion dots */
+.pager {
+  line-height: 1px !important;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: transparent;
+  text-align: center;
+  width: 200px;
+  margin: 18px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.pager a.selected span {
+  background: #fff;
+  opacity: 1;
+}
+.pager a {
+  display: inline-block;
+  padding: 1px;
+}
+.pager span {
+  opacity: 0.5;
+  line-height: 1px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: #fff;
+  text-indent: -100px;
+  line-height: 0;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
