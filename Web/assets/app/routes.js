@@ -31,6 +31,12 @@
           templateUrl: '/app/admin/admin.html',
         }
       }, {
+        url: '/aklsw',
+        config: {
+          title: 'aklsw',
+          templateUrl: '/app/aklsw/aklsw.html',
+        }
+      }, {
         url: '/xignals',
         config: {
           title: 'xignals',
