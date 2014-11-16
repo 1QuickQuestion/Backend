@@ -23,7 +23,8 @@
     "sails": "~0.10.5",
     "sails-disk": "~0.10.0",
     "sails-mongo": "^0.10.4",
-    "node-bitlyapi": "0.4.0"
+    "node-bitlyapi": "0.4.0",
+    "waterline": "0.10.13"
   },
   "scripts": {
     "start": "node app.js",
