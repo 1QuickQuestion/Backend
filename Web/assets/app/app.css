@@ -28,3 +28,7 @@
   content: "";
   padding: 0;
 }
+
+.splash-container {
+	background:url(/app/images/background.png);
+}
