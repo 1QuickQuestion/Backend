@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+  ** NOTE **
+
+  Run `grunt connect` then
+  navigate to http://localhost:3000/app
+  to see this page in browser
+
+  -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <base href="http://regor.local:8888/aklsw/mobile-angular-ui/" />
+    <title>Mobile Angular UI Examples</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="dist/css/mobile-angular-ui-hover.min.css" />
+    <link rel="stylesheet" href="dist/css/mobile-angular-ui-base.min.css" />
+    <link rel="stylesheet" href="dist/css/mobile-angular-ui-desktop.min.css" />
+    <link rel="stylesheet" href="app/custom.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js"></script>
+    <script src="dist/js/mobile-angular-ui.min.js"></script>
+    <script src="app/custom.js"></script>
+  </head>
+  <body ng-app="MobileAngularUiExamples" ng-controller="MainController">
+    <div class="app">
+
+      <!-- Navbars -->
+
+      <div class="navbar navbar-app navbar-absolute-top">
+        <div class="navbar-brand navbar-brand-center" yield-to="title">
+          <span>#AKLSW</span>
+        </div>
+        <div class="btn-group pull-left">
+          <!-- <div ng-click="toggle('mainSidebar')" class="btn btn-navbar sidebar-toggle"> -->
+          <div class="btn btn-navbar sidebar-toggle">
+            <span class="logo"></span> 
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar navbar-app navbar-absolute-bottom">
+        <div class="row">
+          <a href="" class="button"><div class="col-xs-4">Skip</div></a>
+          <a href="" class="button"><div class="col-xs-4">
+            <div class="pager" style="display:block;">
+              <a href="#" class="selected"><span>1</span></a>
+              <a href="#" class=""><span>2</span></a>
+            </div>
+          </div></a>
+          <a href="app/#/email" class="button strong key-action"><div class="col-xs-4">Next &rsaquo;</div></a>
+        </div>
+      </div>
+
+<!--       <div class="navbar navbar-app navbar-absolute-bottom">
+        <div class="btn-group justified">
+          <a href="http://mobileangularui.com/" class="btn btn-navbar"><i class="fa fa-home fa-navbar"></i> Docs</a>
+          <a href="https://github.com/mcasimir/mobile-angular-ui" class="btn btn-navbar"><i class="fa fa-github fa-navbar"></i> Sources</a>
+          <a href="https://github.com/mcasimir/mobile-angular-ui/issues" class="btn btn-navbar"><i class="fa fa-exclamation-circle fa-navbar"></i> Issues</a>
+        </div>
+      </div> -->
+
+      <!-- App Body -->
+      <div class="app-body" ng-class="{loading: loading}">
+        <div ng-show="loading" class="app-content-loading">
+          <!-- <i class="fa fa-spinner fa-spin loading-spinner"></i> -->
+        </div>
+
+        <ng-view class="app-content" ng-hide="loading"></ng-view>
+      </div>
+
+    </div><!-- ~ .app -->
+  </body>
+</html>

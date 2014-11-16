@@ -8,15 +8,17 @@
       var rootUrl = 'http://www.xignal.co';
       var endpoints = {
         'surveys': rootUrl + '/surveys',
-        'surveyQuestions': rootUrl + '/surveys/getQuestions/:id',
+        'surveyQuestions': rootUrl + '/surveys/:id',
         'users': rootUrl + '/users',
-        'user': rootUrl + '/users/:id'
+        'user': rootUrl + '/users/:id',
+        'response': rootUrl + '/surveys/:id/responses'
       };
 
       var service = {
         getSurvey: getSurvey,
         getSurveys: getSurveys,
-        createSurvey: createSurvey
+        createSurvey: createSurvey,
+        createResponse: createResponse
       };
 
       return service;
@@ -43,6 +45,13 @@
         var survey = new Survey();
         _.extend(survey, newSurvey);
         return survey.$save();
+      }
+
+      function createResponse(id, newResponse){
+        var Response = $resource(endpoints.response, {id: id});
+        var response = new Response();
+        _.extend(response, newResponse);
+        return response.$save();
       }
   }
 
