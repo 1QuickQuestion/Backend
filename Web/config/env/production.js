@@ -12,6 +12,9 @@
 
 module.exports = {
 
+  // Host that servers up the audience front end - used in generated QR code and short-link
+  surveys_host: 'http://xignal-api.azurewebsites.net'
+
   /***************************************************************************
    * Set the default database connection for models in the production        *
    * environment (see config/connections.js and config/models.js )           *

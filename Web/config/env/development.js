@@ -12,6 +12,10 @@
 
 module.exports = {
 
+  // Host that servers up the audience front end - used in generated QR code and short-link
+  // The bitly api doesn't seem to work with a local host
+  surveys_host: 'http://xignal-api.azurewebsites.net'
+
   /***************************************************************************
    * Set the default database connection for models in the development       *
    * environment (see config/connections.js and config/models.js )           *
